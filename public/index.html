@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像アノテーションアプリ</title>
+  </head>
+  <body>
+    <canvas id="annotationCanvas"></canvas>
+    <script src="../src/script.js"></script>
+    <!-- <form id="uploadForm">
+      <input type="text" id="projectName" placeholder="Project Name">
+      <input type="file" id="imageInput">
+      <button type="submit">Upload</button>
+  </form> -->
+  <form id="uploadForm">
+    <input type="text" id="projectName" placeholder="Project Name">
+    <input type="file" id="imageInput" style="display: none;">
+    <button type="button" onclick="triggerFileInput()">Upload Image</button>
+  </form>
+
+  </body>
+</html>
